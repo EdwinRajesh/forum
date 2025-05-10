@@ -1,6 +1,6 @@
 import React from 'react'
-import { PostDetail } from './PostDetail'
 import { useParams } from 'react-router';
+import { PostDetail } from '../components/PostDetail';
 
 export const PostPage = () => {
   const {id} = useParams<{ id: string }>();
