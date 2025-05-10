@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import React from 'react'
 import type { Post } from '../components/PostList';
 import { supabase } from '../supabase-client';
+import { LikeButton } from '../components/LikeButton';
 
 
 interface Props{
@@ -37,6 +38,7 @@ if (isLoading) {
         <div className="text-gray-300"> 
           {data?.content}
           </div>
+          <LikeButton postId={postId} />
         </div>
 
 
